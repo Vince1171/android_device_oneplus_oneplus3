@@ -223,9 +223,6 @@
 /sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input*    secure_touch         0440   system  drmrpc
 /sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input*    secure_touch_enable  0660   system  drmrpc
 
-# Vibrator
-/sys/class/timed_output/vibrator/enable             0666 system    system
-
 # laser sensor access
 /sys/devices/virtual/input/input*                   enable_ps_sensor 0660  system   system
 /sys/devices/virtual/input/input*                   set_delay_ms     0660  system   system
@@ -272,14 +269,3 @@
 /dev/block/platform/soc/7464900.sdhci/by-name/frp       0600   system     system
 /dev/block/platform/soc/624000.ufshc/by-name/frp        0600   system     system
 /dev/block/platform/soc/1da4000.ufshc/by-name/frp       0600   system     system
-
-#torch
-/sys/devices/soc/soc:qcom,camera-flash/leds/torch-light* max_brightness   0666 root root
-/sys/devices/soc/soc:qcom,camera-flash/leds/torch-light* brightness       0666 root root
-/sys/devices/soc/soc:qcom,camera-flash/leds/torch-light* trigger          0666 root root
-/sys/devices/soc/soc:qcom,camera-flash/leds/torch-light* uevent           0666 root root
-
-#led
-/sys/devices/soc/leds-qpnp-24/leds/* max_brightness   0666 system system
-/sys/devices/soc/leds-qpnp-24/leds/* brightness       0666 system system
-/sys/devices/soc/leds-qpnp-24/leds/* blink            0666 system system
